@@ -1,0 +1,72 @@
+body{
+	margin: 0;
+	padding: 0;
+	/*background-color: red;*/
+}
+.loading-screen{
+	width: 700;
+	height:200;
+	/*height: 100vh;*/
+	background: #6a89cc;
+	position:absolute;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+}
+.loading-screen::before{
+	content: "";
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	background: #f8c291;
+	top: 40%;
+	left: 20%;
+	transform: translateX(-50%) rotate(0);
+	border-radius: 20px;
+	animation: loading 5s infinite linear;
+}
+
+@keyframes loading{
+	from{
+		transform: translate(-50%) rotate(0deg);
+	}
+	50%{
+		left: 80%;
+	}
+	to{
+		transform: translate(-50%) rotate(1440deg)
+	}
+}
+#div1{
+                width:1400;height:220; text-align:center; color: black;
+
+            border-style: solid;border-color:green;top:0;
+        }
+        .img{width: 100px;height: 100;}
+       #im1{
+             position: absolute; left:1330;width: 100px;height: 100px;
+            top:20;/*border-style: solid;border-color: blue;*/
+        }
+        #im2{
+             position: absolute; right:600;width: 100px;height: 100;
+            top:15;/*border-style: solid;border-color: blue;*/
+        }
+        #im3{
+            position: absolute; left:600;width: 100px;height: 100;
+            top:400;/*border-style: solid;border-color: blue;*/
+        }
+		#im4{
+			position:absolute; left:0; top:219; width:100; height:100;
+	/*border-style: solid;border-color: blue;*/	}
+		#im5{
+			position:absolute;left:90;top:390;width: 100px;height: 100;
+		}
+		.box{width:100%;height:100%;
+            background: -webkit-linear-gradient(right, red , blue); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(right, red, blue); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(right, red, blue); /* Firefox 3.6 - 15 */
+            background: linear-gradient(right, red , blue); /* 标准的语法（必须放在最后） */
+        }
+
+	.img1{width:300;height:300;}
+	form{position:absolute;right:0;top:200;}
